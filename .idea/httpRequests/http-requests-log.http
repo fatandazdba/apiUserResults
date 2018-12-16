@@ -1,0 +1,268 @@
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T071045.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T070851.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T070829.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T070711.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T070632.405.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 0,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T065645.201.json
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T065544.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T065452.201.json
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T065405.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+
+<> 2018-12-11T065258.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    id: 0,  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T064611.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    id: "0",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T064310.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    id: "",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T064219.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{    id: "",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T064117.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T063954.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T063721.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+
+<> 2018-12-11T063321.500.html
+
+###
+
+POST http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password= "fred" }
+
+<> 2018-12-11T063159.500.html
+
+###
+
+DELETE http://localhost:8000/api/v1/user/6
+Accept: */*
+Cache-Control: no-cache
+
+###
+
+DELETE http://localhost:8000/api/v1/user/6
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T061622.405.html
+
+###
+
+GET http://localhost:8000/api/v1/user/1%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T061105.200.json
+
+###
+
+GET http://localhost:8000/api/v1/user
+Accept: */*
+Content-Type: application/json
+
+###
+
+GET http://localhost:8000/api_user_getc%20
+Accept: */*
+Content-Type: Aplication
+
+###
+
+GET http://localhost:8000/api/v1/user
+Accept: */*
+Content-Type: application/json
+
+###
+
+GET http://localhost:8080/api_user_getc%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T050522.404.html
+
+###
+
+GET http://localhost:8080/api_user_getc%20
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T050512.404.html
+
+###
+
+GET http://localhost:8080/api/v1/user/
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T050503.404.html
+
+###
+
+GET http://localhost:8080/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T050216.404.html
+
+###
+
+GET http://localhost:8080/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T050012.404.html
+
+###
+
+GET http://localhost:8080/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+<> 2018-12-11T045934.404.html
+
+###
+

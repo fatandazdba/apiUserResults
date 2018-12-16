@@ -1,0 +1,9 @@
+XXXXXXXXXXXXXXXXXXxxfredXXXXXXXXXXXXXXXXXXxxfred{
+  "user": {
+    "id": 10,
+    "username": "fred",
+    "email": "fred@gmail.com ",
+    "enabled": true,
+    "admin": false
+  }
+}

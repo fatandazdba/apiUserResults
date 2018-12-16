@@ -1,0 +1,9 @@
+{
+  "user": {
+    "id": 12,
+    "username": "fred1",
+    "email": "fred1@gmail.com ",
+    "enabled": true,
+    "admin": false
+  }
+}
