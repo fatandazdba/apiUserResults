@@ -1,9 +1,13 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: zea
- * Date: 15/12/2018
- * Time: 15:17
+ * PHP version 7.2
+ * upm_project - APIUserController.php
+ *
+ * @author   Freddy Tandazo <freddy.tandazo.yanez@alumnos.upm.es>
+ * @license  https://opensource.org/licenses/MIT MIT License
+ * @link     http://www.etsisi.upm.es ETS de Ingeniería de Sistemas Informáticos
+ * Date: 05/12/2018
+ * Time: 10:29
  */
 
 namespace App\Controller;
