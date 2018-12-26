@@ -1,0 +1,14 @@
+{
+  "result": {
+    "id": 3,
+    "result": 12,
+    "user": {
+      "id": 1,
+      "username": "freddy_870",
+      "email": "freddy@gmail.com_870",
+      "enabled": true,
+      "admin": false
+    },
+    "time": "2018-12-26 21:38:52"
+  }
+}

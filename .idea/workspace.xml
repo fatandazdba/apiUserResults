@@ -2,7 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5c73ce12-92a7-468c-aa03-47081f31b983" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Controller/ResultController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ResultController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050223.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050248.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050316.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050415.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050436.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050810.201.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050848.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T050918.400.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T051324.500.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/2018-12-20T052627.500.html" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.idea/httpRequests/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,13 +50,6 @@
         <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
         <item name="miw_results: schema" type="76f4a085:MysqlImplModel$Schema" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="miw_results@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="miw_results: schema" type="76f4a085:MysqlImplModel$Schema" />
-        <item name="users: table" type="285a2a93:MysqlImplModel$Table" />
-      </path>
     </expand>
     <select />
   </component>
@@ -66,19 +68,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Controller/ResultController.php">
+        <entry file="file://$PROJECT_DIR$/src/Controller/ApiResultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://55363cd2-2a12-4e92-8ad2-51d64f657fab/schema/miw_results/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="2082">
+              <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+              <folding>
+                <element signature="e#6#317#0#PHP" expanded="true" />
+                <element signature="e#114#134#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,6 +93,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="dummy://restClient/response22.json" root0="SKIP_INSPECTION" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -111,11 +111,9 @@
         <option value="restClient/response30.txt" />
         <option value="restClient/response39.txt" />
         <option value="restClient/response43.txt" />
-        <option value="restClient/response0.txt" />
         <option value="$PROJECT_DIR$/config/bootstrap.php" />
         <option value="$PROJECT_DIR$/src/Controller/APIUserControllerTest.php" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="restClient/response5.txt" />
         <option value="restClient/response11.txt" />
         <option value="restClient/response18.txt" />
         <option value="restClient/response27.txt" />
@@ -132,8 +130,14 @@
         <option value="$PROJECT_DIR$/src/Controller/APIUserController.php" />
         <option value="$PROJECT_DIR$/tests/APIUserControllerTest.php" />
         <option value="$PROJECT_DIR$/src/Controller/ResultController.php" />
+        <option value="restClient/response0.txt" />
+        <option value="restClient/response5.txt" />
+        <option value="$PROJECT_DIR$/src/Controller/ApiResultController.php" />
       </list>
     </option>
+  </component>
+  <component name="PhpServers">
+    <servers />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
@@ -318,6 +322,166 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22f4b576%22%2C%22route%22%3A%22api_result_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CResultController%22%2C%22method%22%3A%22postResult%22%2C%22file%22%3A%22C%3A%5C%5Cxampp%5C%5Chtdocs%5C%5Cproyectos%5C%5CapiUserResults%5C%5Csrc%5C%5CController%5C%5CResultController.php%22%2C%22line%22%3A65%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="OPTIONS" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/v1/results" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;id&quot;:&quot;3&quot;, &quot;user_id&quot;:&quot;2&quot;,&#9;  &quot;result&quot;:&quot;12&quot;, &quot;time&quot;:&quot;&quot;} " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22f4b576%22%2C%22route%22%3A%22api_result_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CResultController%22%2C%22method%22%3A%22postResult%22%2C%22file%22%3A%22C%3A%5C%5Cxampp%5C%5Chtdocs%5C%5Cproyectos%5C%5CapiUserResults%5C%5Csrc%5C%5CController%5C%5CResultController.php%22%2C%22line%22%3A65%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/v1/results/1" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;id&quot;:&quot;3&quot;, &quot;user_id&quot;:&quot;2&quot;,&#9;  &quot;result&quot;:&quot;12&quot;, &quot;time&quot;:&quot;&quot;} " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22f4b576%22%2C%22route%22%3A%22api_result_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CResultController%22%2C%22method%22%3A%22postResult%22%2C%22file%22%3A%22C%3A%5C%5Cxampp%5C%5Chtdocs%5C%5Cproyectos%5C%5CapiUserResults%5C%5Csrc%5C%5CController%5C%5CResultController.php%22%2C%22line%22%3A65%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="PUT" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/v1/results" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;id&quot;:&quot;3&quot;, &quot;user_id&quot;:&quot;2&quot;,&#9;  &quot;result&quot;:&quot;12&quot;, &quot;time&quot;:&quot;&quot;} " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22bb50d3%22%2C%22route%22%3A%22api_result_post%22%2C%22method%22%3A%22POST%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CResultController%22%2C%22method%22%3A%22postResult%22%2C%22file%22%3A%22C%3A%5C%5Cxampp%5C%5Chtdocs%5C%5Cproyectos%5C%5CapiUserResults%5C%5Csrc%5C%5CController%5C%5CResultController.php%22%2C%22line%22%3A65%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/v1/results" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;id&quot;:&quot;1&quot;, &quot;user_id&quot;:&quot;1&quot;,&#9;  &quot;result&quot;:&quot;12&quot;, &quot;time&quot;:&quot;&quot;} " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
+        <RestClientRequest>
+          <option name="biscuits">
+            <list>
+              <Biscuit>
+                <option name="date" value="-1" />
+                <option name="domain" value="localhost" />
+                <option name="name" value="sf_redirect" />
+                <option name="path" value="/" />
+                <option name="value" value="%7B%22token%22%3A%22ebbbbf%22%2C%22route%22%3A%22api_user_put%22%2C%22method%22%3A%22PUT%22%2C%22controller%22%3A%7B%22class%22%3A%22App%5C%5CController%5C%5CAPIUserController%22%2C%22method%22%3A%22putUser%22%2C%22file%22%3A%22C%3A%5C%5Cxampp%5C%5Chtdocs%5C%5Cproyectos%5C%5CapiUserResults%5C%5Csrc%5C%5CController%5C%5CAPIUserController.php%22%2C%22line%22%3A105%7D%2C%22status_code%22%3A201%2C%22status_text%22%3A%22Created%22%7D" />
+              </Biscuit>
+            </list>
+          </option>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://localhost:8000" />
+          <option name="urlPath" value="/api/v1/results" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="haveTextToSend" value="true" />
+          <option name="textToSend" value="{ &quot;id&quot;:&quot;1&quot;, &quot;user_id&quot;:&quot;1&quot;,&#9;  &quot;result&quot;:&quot;12&quot;, &quot;time&quot;:&quot;&quot;} " />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="biscuits">
             <list>
@@ -1704,17 +1868,11 @@
       <workItem from="1545319523479" duration="6192000" />
       <workItem from="1545325776489" duration="4373000" />
       <workItem from="1545484088314" duration="865000" />
-      <workItem from="1545853412611" duration="1103000" />
+      <workItem from="1545853412611" duration="5312000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="APIUserControllerTest - 2018.12.15 at 13h 57m 32s.xml">
-      <configuration name="APIUserControllerTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="APIUserControllerTest_testGetCPersona200 - 2018.12.15 at 13h 57m 47s.xml">
-      <configuration name="APIUserControllerTest.testGetCPersona200" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="APIUserControllerTest_testGetCPersona200 - 2018.12.15 at 14h 01m 01s.xml">
       <configuration name="APIUserControllerTest.testGetCPersona200" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -1739,9 +1897,15 @@
     <history-entry file="APIUserControllerTest_testGetCPersona200 - 2018.12.22 at 14h 11m 08s.xml">
       <configuration name="APIUserControllerTest.testGetCPersona200" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="APIUserControllerTest_testGetCPersona200 - 2018.12.26 at 22h 12m 00s.xml">
+      <configuration name="APIUserControllerTest.testGetCPersona200" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="APIUserControllerTest_testGetCPersona200 - 2018.12.26 at 22h 12m 05s.xml">
+      <configuration name="APIUserControllerTest.testGetCPersona200" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42804000" />
+    <option name="totallyTimeSpent" value="47013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1760,17 +1924,17 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Database Console" order="0" weight="0.3286119" />
       <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Find" order="2" visible="true" weight="0.45750707" />
       <window_info anchor="bottom" id="Run" order="3" weight="0.33286119" />
-      <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3286119" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="REST Client" order="11" weight="0.5708215" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="12" visible="true" weight="0.5056657" />
+      <window_info anchor="bottom" id="REST Client" order="11" weight="0.36260623" />
+      <window_info anchor="bottom" id="Terminal" order="12" weight="0.5056657" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -1813,7 +1977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://55363cd2-2a12-4e92-8ad2-51d64f657fab/schema/miw_results/table/results" />
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1190">
@@ -1865,6 +2028,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ResultController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-694">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding>
+            <element signature="e#113#135#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/APIUserController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1875,10 +2048,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Controller/ResultController.php">
+    <entry file="das://55363cd2-2a12-4e92-8ad2-51d64f657fab/schema/miw_results/table/results">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Controller/ApiResultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+        <state relative-caret-position="2082">
+          <caret line="126" column="23" selection-start-line="126" selection-start-column="23" selection-end-line="126" selection-end-column="23" />
+          <folding>
+            <element signature="e#6#317#0#PHP" expanded="true" />
+            <element signature="e#114#134#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
