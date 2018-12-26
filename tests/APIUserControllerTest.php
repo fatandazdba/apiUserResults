@@ -13,21 +13,26 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Bundle\FrameworkBundle\Client;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Route;
+
 
 class APIUserControllerTest extends WebTestCase
 {
+
+
     /** @var Client $client */
     private static $client;
 
     public static function setUpBeforeClass()
     {
         self::$client = static::createClient();
+
+
     }
 
     /**
      * Implements testGetCPersona200
      * @return void
-     *
      * @covers ::getCPersona
      */
     public function testGetCPersona200(): void

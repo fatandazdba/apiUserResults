@@ -1,63 +1,56 @@
 <?php
 /**
- * PHP version 7.2
- * upm_project - APIUserController.php
- *
- * @author   Freddy Tandazo <freddy.tandazo.yanez@alumnos.upm.es>
- * @license  https://opensource.org/licenses/MIT MIT License
- * @link     http://www.etsisi.upm.es ETS de Ingeniería de Sistemas Informáticos
- * Date: 05/12/2018
- * Time: 10:29
+ * Created by PhpStorm.
+ * User: zea
+ * Date: 15/12/2018
+ * Time: 15:17
  */
 
 namespace App\Controller;
-
+use App\Entity\Result;
 use App\Entity\User;
+use DateTime;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
-use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-
 /**
- * Class APIUserController
+ * Class UserController
  *
  * @package App\Controller
  *
- * @Route(path=APIUserController::USER_API_PATH, name="api_user_")
+ * @Route(path=ResultController::RESULT_API_PATH, name="api_result_")
  */
-class APIUserController extends AbstractController
+class ResultController extends AbstractController
 {
-    // Ruta API User
-    public const USER_API_PATH = '/api/v1/user';
+    const RESULT_API_PATH = "/api/v1/results";
 
     /**
      * @Route(path="", name="getc", methods={ Request::METHOD_GET } )
      * @return Response
      */
-    public function getCUsers(): Response
+    public function getCResult(): Response
     {
         $em = $this->getDoctrine()->getManager();
-        /** @var User[] $users */
-        $users = $em->getRepository(User::class)->findAll();
+        /** @var Result[] $results */
+        $results = $em->getRepository(Result::class)->findAll();
 
-        return (null === $users)
+        return (null === $results)
             ? $this->error404()
-            : new JsonResponse([ 'users' => $users ]);
+            : new JsonResponse([ 'results' => $results ]);
     }
 
     /**
      * @Route(path="/{id}", name="get", methods={ Request::METHOD_GET } )
-     * @param User|null $user
+     * @param Result|null $id
      * @return Response
      */
-    public function getUser(?User $user = null): Response
+    public function getResult(?Result $id = null): Response
     {
-        // $user = $this->getDoctrine()->getManager()->find(User::class, $dni);
-
-        return (null === $user)
+        return (null === $id)
             ? $this->error404()
-            : new JsonResponse([ 'user' => $user ]);
+            : new JsonResponse([ 'result' => $id ]);
     }
 
     /**
@@ -65,99 +58,91 @@ class APIUserController extends AbstractController
      * @param Request $request
      * @return Response
      */
-    public function postUser(Request $request): Response
+    public function postResult(Request $request): Response
     {
         $datosPeticion = $request->getContent();
         $datos = json_decode($datosPeticion, true);
-        // No envia DNI: 422
-        if (!array_key_exists('id', $datos)) {
+
+        if (!array_key_exists('user_id', $datos)) {
             return $this->error422();
         }
 
-        // El DNI ya existe: 400
-        if ($this->getDoctrine()->getManager()->find(User::class, $datos['id'])) {
+        $user =$this->getDoctrine()->getManager()->find(User::class, $datos['user_id']);
+        if (!$user) {
             return $this->error400();
         }
+        $newTimestamp =$datos['time'] ?? 'now';
+        /** @var Result $result */
 
-        /** @var User $user */
-        $user = new User(
-            $datos['username'] ?? null,
-            $datos['email'] ?? null,
-            $datos['password'] ?? null
-
+        $result = new Result(
+            $datos['result'],
+            $user,
+            new DateTime($newTimestamp)
         );
 
         $em = $this->getDoctrine()->getManager();
-        $em->persist($user);
+        $em->persist($result);
         $em->flush();
 
         return new JsonResponse(
-            [ 'user' => $user ],
+            [ 'result' => $result ],
             Response::HTTP_CREATED
         );
     }
 
     /**
-     * @Route(path="", name="put", methods={ Request::METHOD_PUT })
+     * @Route(path="/{id}", name="put", methods={ Request::METHOD_PUT })
      * @param Request $request
      * @return Response
      */
-    public function putUser(Request $request): Response
+    public function putResult(?Result $Result = null, Request $request): Response
     {
-        $datos = $request->getContent();
+        if (null === $Result) {
+            return $this->error404();
+        }
+        $datosPeticion = $request->getContent();
+        $datos = json_decode($datosPeticion, true);
 
-        /** @var TYPE_NAME $datos */
-        $datos = json_decode($datos, true);
-
-        // No envia DNI: 422
-        if (!array_key_exists('id', $datos)) {
+        if (!array_key_exists('user_id', $datos)) {
             return $this->error422();
         }
+
+        $user =$this->getDoctrine()->getManager()->find(User::class, $datos['user_id']);
+        if (!$user) {
+            return $this->error400();
+        }
+        $newTimestamp =$datos['time'] ?? 'now';
+
+        $Result->setResult($datos['result']);
+        $Result->setUser($user);
+        $Result->setTime(new DateTime($newTimestamp));
         $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository(User::class)->find($datos['id']);
+        $em->flush();
 
-        if ($user) {
-            $user->setUsername($datos['username']);
-            $user->setEmail($datos['email']);
-            $user->setEnabled($datos['enabled']);
-            $user->setIsAdmin($datos['admin']);
-            $user->setPassword($datos['password']);
-            $em->flush();
-
-            return new JsonResponse(
-                [ 'user' => $user ],
-                Response::HTTP_ACCEPTED
-            );
-
-        }
-        else{
-            return new JsonResponse(
-                null,
-                Response::HTTP_BAD_REQUEST
-            );
-        }
+        return new JsonResponse(
+            ['Result' => $Result],
+            Response::HTTP_OK
+        );
     }
-
     /**
      * @Route(path="/{id}", name="delete", methods={ Request::METHOD_DELETE } )
-     * @param User|null $user
+     * @param Result|null $result
      * @return Response
      */
-    public function deleteUser(?User $user = null): Response
+    public function deleteResult(?Result $result = null): Response
     {
         // No existe
-        if (null === $user) {
+        if (null === $result) {
             return $this->error404();
         }
 
         // Existe -> eliminar y devolver 204
         $em = $this->getDoctrine()->getManager();
-        $em->remove($user);
+        $em->remove($result);
         $em->flush();
 
         return new Response(null, Response::HTTP_NO_CONTENT);
     }
-
     /**
      * Genera una respuesta 400 - Bad Request
      * @return JsonResponse

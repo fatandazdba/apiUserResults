@@ -1,0 +1,11 @@
+datosPeticion: {"id": "18", "username": "freddy_188", "email": "freddy18@gmail.com", "enabled": "1", "admin": "0", "password": "$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"
+}
+\ datosUser['id']: 18
+\ datosUser['username']: freddy_188
+\ username3333333333333: this username: FRED
+getUsername: freddy_188
+\ ToString: 0 -                      0 -     freddy18@gmail.com -                              1 -                                - $2y$10$1MsnvUSwq7RO3VkOL3Gj9uYnYpzQEC8Mws2fDnfSnXTRk24vHCuEK
+User: 0 -                      0 -     freddy18@gmail.com -                              1 -                                - $2y$10$1MsnvUSwq7RO3VkOL3Gj9uYnYpzQEC8Mws2fDnfSnXTRk24vHCuEK
+{"user":{"id": 0, "username": "freddy_188", "email": "freddy18@gmail.com", "enabled": true, "admin": false
+}
+}

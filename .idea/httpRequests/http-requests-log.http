@@ -2,19 +2,9 @@ PUT http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{ "id":"18", "username":"freddy_1888",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
 
-<> 2018-12-11T071045.500.html
-
-###
-
-PUT http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
-
-<> 2018-12-11T070851.500.html
+<> 2018-12-20T072159.202.json
 
 ###
 
@@ -22,19 +12,9 @@ PUT http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{ "id":"18", "username":"freddy_1888",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
 
-<> 2018-12-11T070829.500.html
-
-###
-
-PUT http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
-
-<> 2018-12-11T070711.500.html
+<> 2018-12-20T071911.201.json
 
 ###
 
@@ -42,9 +22,337 @@ PUT http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 12,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
 
-<> 2018-12-11T070632.405.html
+<> 2018-12-20T071848.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T071524.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T070950.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T070725.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T070641.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T070409.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T070102.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065705.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065645.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065545.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065414.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065327.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T065223.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T064947.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T064924.422.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T063837.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T063448.422.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T062637.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T062514.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_188",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T062351.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T062304.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T062248.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T061646.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T060838.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T060752.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T060716.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T060637.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T060601.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T055822.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T055444.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T055135.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":"18", "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T054629.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":18, "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T054205.500.html
 
 ###
 
@@ -52,9 +360,79 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 0,         "username": "fred1",              "email":    "fred1@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{ "id":18, "username":"freddy_18",	  "email":"freddy18@gmail.com", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
 
-<> 2018-12-11T065645.201.json
+<> 2018-12-20T053753.201.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":1,	"username":"freddy_88870",	  "email":"freddy@gmail.com_870", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T053539.400.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":1,	"username":"freddy_88870",	  "email":"freddy@gmail.com_870", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T053408.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":1,	"username":"freddy_88870",	  "email":"freddy@gmail.com_870", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T053314.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":1,	"username":"freddy_88870",	  "email":"freddy@gmail.com_870", "enabled":"1", "admin":"0",	"password":"$2y$10$tqKfDAaC9sIUA6mporYaq.gEYV15C6c5milXQL9FURqdUHnbVtbjm"}
+
+<> 2018-12-20T052627.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":17, "username":"freddyTandazo16", "email":"fred16@gmail.com ", "enabled":"1", "admin":"1", "password": "fred"}
+
+<> 2018-12-20T051324.500.html
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":16, "username":"freddyTandazo16", "email":"fred16@gmail.com ", "enabled":"1", "admin":"1", "password": "fred"}
+
+<> 2018-12-20T050918.400.json
+
+###
+
+PUT http://localhost:8000/api/v1/user
+Accept: */*
+Cache-Control: no-cache
+
+{ "id":16, "username":"fred16", "email":"fred16@gmail.com ", "enabled":"1", "admin":"1", "password": "fred"}
+
+<> 2018-12-20T050848.400.json
 
 ###
 
@@ -62,19 +440,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{ "id":16, "username":"fred16", "email":"fred16@gmail.com ", "enabled":"1", "admin":"1", "password": "fred"}
 
-<> 2018-12-11T065544.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
-
-<> 2018-12-11T065452.201.json
+<> 2018-12-20T050810.201.json
 
 ###
 
@@ -82,19 +450,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
+{    "id": 15,         "username": "fred15",              "email":    "fred15@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
 
-<> 2018-12-11T065405.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    "id": 0,         "username": "fred",              "email":    "fred@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
-
-<> 2018-12-11T065258.500.html
+<> 2018-12-20T050436.400.json
 
 ###
 
@@ -102,19 +460,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    id: 0,  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+{    "id": 15,         "username": "fred15",              "email":    "fred15@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
 
-<> 2018-12-11T064611.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    id: "0",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
-
-<> 2018-12-11T064310.500.html
+<> 2018-12-20T050415.400.json
 
 ###
 
@@ -122,19 +470,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{    id: "",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+{    "id": 15,         "username": "fred15",              "email":    "fred15@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
 
-<> 2018-12-11T064219.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{    id: "",  username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
-
-<> 2018-12-11T064117.500.html
+<> 2018-12-20T050316.400.json
 
 ###
 
@@ -142,19 +480,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+{    "id": 15,         "username": "fred15",              "email":    "fred15@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
 
-<> 2018-12-11T063954.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
-
-<> 2018-12-11T063721.500.html
+<> 2018-12-20T050248.400.json
 
 ###
 
@@ -162,107 +490,9 @@ POST http://localhost:8000/api/v1/user
 Accept: */*
 Cache-Control: no-cache
 
-{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password: "fred" }
+{    "id": 14,         "username": "fred14",              "email":    "fred14@gmail.com ",                   "enabled":  "1",                        "admin":    "1",      "password": "fred"       }
 
-<> 2018-12-11T063321.500.html
-
-###
-
-POST http://localhost:8000/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-{     username: "fred",     email:    "fred@gmail.com ",     enabled:  "1",     admin:    "1",     password= "fred" }
-
-<> 2018-12-11T063159.500.html
-
-###
-
-DELETE http://localhost:8000/api/v1/user/6
-Accept: */*
-Cache-Control: no-cache
-
-###
-
-DELETE http://localhost:8000/api/v1/user/6
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T061622.405.html
-
-###
-
-GET http://localhost:8000/api/v1/user/1%20
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T061105.200.json
-
-###
-
-GET http://localhost:8000/api/v1/user
-Accept: */*
-Content-Type: application/json
-
-###
-
-GET http://localhost:8000/api_user_getc%20
-Accept: */*
-Content-Type: Aplication
-
-###
-
-GET http://localhost:8000/api/v1/user
-Accept: */*
-Content-Type: application/json
-
-###
-
-GET http://localhost:8080/api_user_getc%20
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T050522.404.html
-
-###
-
-GET http://localhost:8080/api_user_getc%20
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T050512.404.html
-
-###
-
-GET http://localhost:8080/api/v1/user/
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T050503.404.html
-
-###
-
-GET http://localhost:8080/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T050216.404.html
-
-###
-
-GET http://localhost:8080/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T050012.404.html
-
-###
-
-GET http://localhost:8080/api/v1/user
-Accept: */*
-Cache-Control: no-cache
-
-<> 2018-12-11T045934.404.html
+<> 2018-12-20T050223.500.html
 
 ###
 
