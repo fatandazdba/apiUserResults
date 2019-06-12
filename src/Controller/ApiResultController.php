@@ -1,7 +1,7 @@
 <?php
 /**
  * PHP version 7.2
- * upm_project - APIUserController.php
+ * apiUserResults  - APIResultController.php
  *
  * @author   Freddy Tandazo <freddy.tandazo.yanez@alumnos.upm.es>
  * @license  https://opensource.org/licenses/MIT MIT License
@@ -57,6 +57,21 @@ class ApiResultController extends AbstractController
         return (null === $result)
             ? $this->error404()
             : new JsonResponse(['result' => $result], Response::HTTP_OK);
+
+    }
+    /**
+     * @Route(path="/user/{user_id}")
+     * @param $user_id
+     * @return JsonResponse
+     */
+    public function getResultsByUser($user_id){
+
+        $em = $this->getDoctrine()->getManager();
+        $userResults = $em->getRepository(Result::class)->findBy(["user" => $user_id]);
+
+        return(null == $userResults)
+            ? $this->error404()
+            : new JsonResponse(['user_results' => $userResults], Response::HTTP_OK);
 
     }
 
@@ -151,7 +166,7 @@ class ApiResultController extends AbstractController
         $em->flush();
         return new JsonResponse(
             ["result" => $result],
-            209
+            202
 
         );
 

@@ -1,13 +1,13 @@
 <?php
 /**
  * PHP version 7.2
- * src\Entity\Result.php
+ * apiUserResults - Result.php
  *
- * @category Entities
- * @package  MiW\Results\Entity
- * @author   Javier Gil <franciscojavier.gil@upm.es>
+ * @author   Freddy Tandazo <freddy.tandazo.yanez@alumnos.upm.es>
  * @license  https://opensource.org/licenses/MIT MIT License
  * @link     http://www.etsisi.upm.es ETS de Ingeniería de Sistemas Informáticos
+ * Date: 05/12/2018
+ * Time: 10:29
  */
 
 namespace App\Entity;

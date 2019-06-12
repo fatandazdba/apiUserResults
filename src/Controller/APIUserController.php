@@ -1,7 +1,7 @@
 <?php
 /**
  * PHP version 7.2
- * upm_project - APIUserController.php
+ * apiUserResults  - APIUserController.php
  *
  * @author   Freddy Tandazo <freddy.tandazo.yanez@alumnos.upm.es>
  * @license  https://opensource.org/licenses/MIT MIT License
@@ -29,7 +29,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class APIUserController extends AbstractController
 {
     // Ruta API User
-    public const USER_API_PATH = '/api/v1/user';
+    public const USER_API_PATH = '/api/v1/users';
 
     /**
      * @Route(path="", name="getc", methods={ Request::METHOD_GET } )
@@ -61,30 +61,50 @@ class APIUserController extends AbstractController
     }
 
     /**
-     * @Route(path="", name="post", methods={ Request::METHOD_POST })
-     * @param Request $request
-     * @return Response
+     * @Route(path="/username/{username}", name="get_user_by_username", methods={Request::METHOD_GET})
+     * @param $username
+     * @return JsonResponse
      */
-    public function postUser(Request $request): Response
+    public function getUniqueUserByUsername($username){
+
+        $em = $this->getDoctrine()->getManager();
+        $user = $em->getRepository(User::class)->findOneBy(["username" => $username]);
+
+
+        return (null == $username)
+            ? $this->error404()
+            : new JsonResponse(["user" => $user], Response::HTTP_OK);
+    }
+
+    /**
+     * @Route(path="", name="post", methods={Request::METHOD_POST})
+     * @param Request $request
+     * @return JsonResponse
+     */
+    public function postUser(Request $request): JsonResponse
     {
+
         $datosPeticion = $request->getContent();
         $datos = json_decode($datosPeticion, true);
-        // No envia DNI: 422
-        if (!array_key_exists('id', $datos)) {
+
+        //check if required data exist
+        if (empty($datos['username']) || empty($datos['email'])) {
             return $this->error422();
         }
 
-        // El DNI ya existe: 400
-        if ($this->getDoctrine()->getManager()->find(User::class, $datos['id'])) {
-            return $this->error400();
+        $dbUser = $this->getDoctrine()->getManager()->getRepository(User::class)->findOneBy(['username' => $datos['username']]);
+        $dbEmail = $this->getDoctrine()->getManager()->getRepository(User::class)->findOneBy(['email' => $datos['email']]);
+
+        //check if user exist
+        if ($dbUser || $dbEmail) {
+            return $this->error422();
         }
 
-        /** @var User $user */
         $user = new User(
-            $datos['username'] ?? null,
-            $datos['email'] ?? null,
-            $datos['password'] ?? null
-
+            $datos['username'],
+            $datos['email'],
+            $datos['password'],
+            $datos['enabled']
         );
 
         $em = $this->getDoctrine()->getManager();
@@ -92,54 +112,61 @@ class APIUserController extends AbstractController
         $em->flush();
 
         return new JsonResponse(
-            [ 'user' => $user ],
+            ['user' => $user],
             Response::HTTP_CREATED
-        );
+        );// created 201
+
     }
 
     /**
-     * @Route(path="", name="put", methods={ Request::METHOD_PUT })
+     * @Route(path="/{id}", name="update_user", methods={ Request::METHOD_PUT })
      * @param Request $request
-     * @return Response
+     * @param User|null $user
+     * @return JsonResponse
      */
-    public function putUser(Request $request): Response
+    public function updateUser(Request $request, User $user = null): JsonResponse
     {
-        $datos = $request->getContent();
 
-        /** @var TYPE_NAME $datos */
-        $datos = json_decode($datos, true);
-
-        // No envia DNI: 422
-        if (!array_key_exists('id', $datos)) {
-            return $this->error422();
+        if (null == $user) {
+            return $this->error404();
         }
-        $em = $this->getDoctrine()->getManager();
-        $user = $em->getRepository(User::class)->find($datos['id']);
 
-        if ($user) {
+
+        $datosPeticion = $request->getContent();
+        $datos = json_decode($datosPeticion, true);
+
+
+        if (empty($datos)) {
+            return $this->error400();
+        }
+
+        if (isset($datos['username'])) {
             $user->setUsername($datos['username']);
+        }
+
+        if (isset($datos['email'])) {
             $user->setEmail($datos['email']);
-            $user->setEnabled($datos['enabled']);
-            $user->setIsAdmin($datos['admin']);
+        }
+
+        if (isset($datos['password'])) {
             $user->setPassword($datos['password']);
-            $em->flush();
-
-            return new JsonResponse(
-                [ 'user' => $user ],
-                Response::HTTP_ACCEPTED
-            );
-
         }
-        else{
-            return new JsonResponse(
-                null,
-                Response::HTTP_BAD_REQUEST
-            );
+
+        if (isset($datos['enable'])) {
+            $user->setEnabled($datos['enable']);
         }
+
+        $em = $this->getDoctrine()->getManager();
+        $em->merge($user);
+        $em->flush();
+
+        return new JsonResponse(
+            ['user' => $user],
+            Response::HTTP_ACCEPTED
+        ); // accepted 202
     }
-
     /**
-     * @Route(path="/{id}", name="delete", methods={ Request::METHOD_DELETE } )
+     * @Route(path="/{id}", name="delete_user", methods={Request::METHOD_DELETE })
      * @param User|null $user
      * @return Response
      */
@@ -156,6 +183,31 @@ class APIUserController extends AbstractController
         $em->flush();
 
         return new Response(null, Response::HTTP_NO_CONTENT);
+    }
+
+    /**
+     * @Route(path="", name="options_users", methods={ Request::METHOD_OPTIONS })
+     * @return Response
+     * @codeCoverageIgnore
+     */
+    public function optionsUsers(): Response
+    {
+        /** @var array $options */
+        $options = "GET,POST";
+        return new JsonResponse([],Response::HTTP_OK ,["Allow" => $options]);
+    }
+
+
+    /**
+     * @Route(path="/{id}", name="options_user_unique", methods={ Request::METHOD_OPTIONS })
+     * @return Response
+     * @codeCoverageIgnore
+     */
+    public function optionsUser(): Response
+    {
+        /** @var array $options */
+        $options="GET,UPDATE, DELETE";
+        return new JsonResponse([],Response::HTTP_OK ,["Allow" => $options]);
     }
 
     /**
