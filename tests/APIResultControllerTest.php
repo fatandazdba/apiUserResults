@@ -12,7 +12,7 @@
 
 namespace App\test\Controller;
 
-use App\Controller\ApiResultController;
+use App\Controller\ApiPunkController;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 use Symfony\Component\BrowserKit\Client;
 use Symfony\Component\HttpFoundation\Request;
@@ -22,7 +22,7 @@ use Symfony\Component\HttpFoundation\Response;
  * Class ApiPersonaControllerTest
  *
  * @package App\Tests\Controller
- * @coversDefaultClass \App\Controller\ApiResultController
+ * @coversDefaultClass \App\Controller\ApiPunkController
  */
 class ApiResultControllerTest extends WebTestCase
 {
@@ -41,7 +41,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_GET,
-            ApiResultController::RESULT_API_PATH . "/" . 2 // Comprobar en la base
+            ApiPunkController::RESULT_API_PATH . "/" . 2 // Comprobar en la base
         );
 
         /** @var Response $response */
@@ -61,7 +61,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_GET,
-            ApiResultController::RESULT_API_PATH . "/" . 73 //Comprobar en la base
+            ApiPunkController::RESULT_API_PATH . "/" . 73 //Comprobar en la base
         );
 
         /**
@@ -82,7 +82,7 @@ class ApiResultControllerTest extends WebTestCase
         $user_id = $data['user'];
         self::$client->request(
             Request::METHOD_GET,
-            ApiResultController::RESULT_API_PATH . '/user/' . $user_id
+            ApiPunkController::RESULT_API_PATH . '/user/' . $user_id
         );
         /**
          * @var Response $response
@@ -104,7 +104,7 @@ class ApiResultControllerTest extends WebTestCase
         $entrydata = $data;
         self::$client->request(
             Request::METHOD_POST,
-            ApiResultController::RESULT_API_PATH,
+            ApiPunkController::RESULT_API_PATH,
             [], [], [], json_encode($data)
         );
 
@@ -129,7 +129,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_POST,
-            ApiResultController::RESULT_API_PATH,
+            ApiPunkController::RESULT_API_PATH,
             [], [], [], json_encode($data)
         );
 
@@ -150,7 +150,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_POST,
-            ApiResultController::RESULT_API_PATH,
+            ApiPunkController::RESULT_API_PATH,
             [], [], [], json_encode($data)
         );
 
@@ -170,7 +170,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_GET,
-            ApiResultController::RESULT_API_PATH
+            ApiPunkController::RESULT_API_PATH
         );
 
         /** @var Response $response */
@@ -189,7 +189,7 @@ class ApiResultControllerTest extends WebTestCase
     {
         self::$client->request(
             Request::METHOD_DELETE,
-            ApiResultController::RESULT_API_PATH . "/" . 2  //Comprobar en la base
+            ApiPunkController::RESULT_API_PATH . "/" . 2  //Comprobar en la base
         );
 
         /** @var Response $response */
@@ -208,7 +208,7 @@ class ApiResultControllerTest extends WebTestCase
 
         self::$client->request(
             Request::METHOD_PUT,
-            ApiResultController::RESULT_API_PATH . "/" . 3, //Comprobar en la base
+            ApiPunkController::RESULT_API_PATH . "/" . 3, //Comprobar en la base
             [], [], [], json_encode($data)
         );
 
@@ -233,7 +233,7 @@ class ApiResultControllerTest extends WebTestCase
 
         self::$client->request(
             Request::METHOD_PUT,
-            ApiResultController::RESULT_API_PATH . "/" . 55, //Comprobar en la base
+            ApiPunkController::RESULT_API_PATH . "/" . 55, //Comprobar en la base
             [], [], [], json_encode($data)
         );
 

@@ -21,3 +21,5 @@
 
 # IDEs and editors
 /.idea
+.idea/
+src/Controller/ApiPunkController.php
