@@ -19,4 +19,5 @@ Se monta un cliente swagger para atacar al API: http://localhost:8000/api-docs/i
 ![](https://raw.githubusercontent.com/fatandazdba/apiUserResults/master/public/img/swagger%20url.PNG)
 
 link de referencia: https://editor.swagger.io/
+
 link de referencia formato json: https://petstore.swagger.io/v2/swagger.json
